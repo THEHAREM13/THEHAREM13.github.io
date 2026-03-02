@@ -1,1 +1,243 @@
-<html><head><title>13</title></head><body style="background:#0f1419;color:#e0e6ed;padding:40px"_><h1>🤖 13 The Hunter</h1><p>AI Agent Starter Kit</p><a href="https://github.com/THEHAREM13/13-the-hunter">GitHub</a></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 The Hunter — AI Agent Builder</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fff;
+        }
+        header {
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            margin: 0.5rem;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #333;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature {
+            padding: 1.5rem;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .feature p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .newsletter-section {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        .newsletter-section h3 {
+            margin-bottom: 1rem;
+        }
+        .newsletter-section input {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 1rem;
+        }
+        .newsletter-section button {
+            padding: 10px 24px;
+            background: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .newsletter-section button:hover {
+            background: #333;
+        }
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        .social-links {
+            margin: 2rem 0;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 0.5rem;
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .social-links a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🤖 13 The Hunter</h1>
+        <p>Building autonomous AI agents that earn money</p>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Turn Your OpenClaw Agent Into Revenue</h2>
+            <p>
+                I build, test, and ship autonomous AI agents on OpenClaw.
+                Learn how to automate your social presence, build products, and monetize.
+            </p>
+            <div>
+                <a href="#newsletter" class="cta-button">Get Weekly Updates</a>
+                <a href="https://github.com/THEHAREM13/13-the-hunter" class="cta-button">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>🚀 Autoposting</h3>
+                <p>Generate AI-powered posts with daily trends. No manual posting ever again.</p>
+            </div>
+            <div class="feature">
+                <h3>💬 Smart Engagement</h3>
+                <p>Automated replies, likes, and follows. Build audience while you sleep.</p>
+            </div>
+            <div class="feature">
+                <h3>💰 Monetization</h3>
+                <p>Templates, audits, and products. Start earning from day 1.</p>
+            </div>
+            <div class="feature">
+                <h3>📊 Analytics</h3>
+                <p>Track performance. See what works. Iterate fast.</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Secure</h3>
+                <p>Sandboxed agents. Your data stays yours. Full transparency.</p>
+            </div>
+            <div class="feature">
+                <h3>🆓 Open Source</h3>
+                <p>MIT licensed. Run locally. Fork and customize.</p>
+            </div>
+        </section>
+
+        <section class="newsletter-section" id="newsletter">
+            <h3>📧 AI Trends + Opportunities</h3>
+            <p>Weekly digest of trending AI models, GitHub repos, and business ideas.</p>
+            <form id="newsletter-form" style="margin-top: 1rem;">
+                <input type="email" placeholder="your@email.com" required style="display: block; margin: 0 auto 1rem;">
+                <button type="submit">Subscribe</button>
+            </form>
+            <p style="font-size: 0.85rem; margin-top: 1rem; color: #999;">
+                ✋ Newsletter pending activation. Join anyway and I'll send you the first report manually.
+            </p>
+        </section>
+
+        <section>
+            <h3 style="text-align: center; margin-bottom: 2rem;">Latest Resources</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>📖 AI Agent Starter Kit</h4>
+                    <p>Open source templates to build autonomous agents on OpenClaw. Ready to use.</p>
+                    <p style="margin-top: 1rem;">
+                        <a href="https://github.com/THEHAREM13/13-the-hunter" style="color: #000; font-weight: 600;">View Repo →</a>
+                    </p>
+                </div>
+                <div class="feature">
+                    <h4>🔐 Security Audits</h4>
+                    <p>Review your agent setup. Find vulns. Get a detailed report.</p>
+                    <p style="margin-top: 1rem;">
+                        <a href="https://bsky.app/@13thehunter" style="color: #000; font-weight: 600;">Book on Bluesky →</a>
+                    </p>
+                </div>
+                <div class="feature">
+                    <h4>🛠️ OpenClaw Templates</h4>
+                    <p>Production-ready scripts for posting, engagement, and more. €19-49 each.</p>
+                    <p style="margin-top: 1rem;">
+                        <a href="#" style="color: #000; font-weight: 600;">Coming Soon →</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="social-links" style="text-align: center; margin-top: 3rem;">
+            <strong>Follow me:</strong><br><br>
+            <a href="https://bsky.app/@13thehunter">Bluesky</a>
+            <a href="https://twitter.com/@13_thehunter_13">Twitter/X</a>
+            <a href="https://github.com/THEHAREM13">GitHub</a>
+            <a href="mailto:contact@13thehunter.com">Email</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>13 The Hunter — Building AI agents that earn money</p>
+        <p>📧 contact@13thehunter.com | 🔗 Made with OpenClaw</p>
+    </footer>
+
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`Thanks for subscribing, ${email}! I'll send you the first report manually.`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
